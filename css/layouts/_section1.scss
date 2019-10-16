@@ -1,0 +1,160 @@
+#section1{
+	padding:120px 0 105px 0;
+	margin-top: 500px;
+	.body{
+		// .box{
+		// 	overflow: hidden;
+		// 	margin-bottom: 50px;
+		// 	display: block;
+		//     width: 70%;
+		//     margin-top: 36%;
+		//     margin-left: auto;
+		//     margin-right: auto;
+		// 	.item{
+		// 		width: 21%;
+		// 		height: 160px;
+		// 	    float: left;
+		// 	    background: #f4f4f48f;
+		// 	    margin: 0 2%;
+		// 	}
+		// }
+		.top{
+			margin-bottom: 103px;
+			.title{
+				margin-bottom: 20px;
+			}
+			.s-desc{
+				padding:0 255px;
+				color: $c6;
+			}
+		}
+		.bottom{
+			.image{
+				padding-right:20px;
+			}
+			.desc{
+				padding-left:20px;
+				.title{
+					color: $c10;
+					font-weight:bold;
+					font-size:30px;
+					margin-bottom: 35px;
+				}
+				.txt{
+					color: $c6;
+					text-align: justify;
+					letter-spacing: 1px;
+					span{
+						color: $c10;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1366px) {
+	#section1{
+		margin-top: 550px;
+	}
+}
+@media (max-width:1024px) {
+	#section1{
+		.body{
+			// .box{
+			// 	margin-top: 58%;
+			// 	width: 81%;
+			// }
+			.top{
+				.s-desc{
+					padding:0 150px;
+				}
+			}
+		}
+	}
+}
+@media (max-width:768px) {
+	#section1{
+		padding-top:30px;
+		margin-top:50px;
+		.body{
+			// .box{
+			// 	margin-top: 82%;
+			// 	width: 100%;
+			// }
+			.top{
+				margin-bottom: 50px;
+				.s-desc{
+					padding:0;
+				}
+			}
+			.bottom{
+				.image{
+					padding:0;
+					text-align: center;
+					margin-bottom: 30px;
+					img{
+						display: inline-block;
+					}
+				}
+				.desc{
+					padding:0;
+					.title{
+						text-align: center;
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width:414px) {
+	#section1{
+		.body{			
+			// .box{
+			// 	margin-top:0;
+			// 	.item{
+			// 		width:48%;
+			// 		margin:0 1%;
+			// 		margin-bottom: 10px;
+			// 	}
+			// }
+			.bottom{				
+				.desc{
+					.txt{
+						letter-spacing: 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width:375px) {
+	#section1{
+		padding-top:0;
+		.body{					
+			.bottom{				
+				.desc{
+					.title{
+						font-size: 25px;
+					}
+					.txt{
+						letter-spacing: 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width:320px) {
+	#section1{
+		.body{					
+			.bottom{				
+				.desc{
+					.title{
+						font-size: 23px;
+					}
+				}
+			}
+		}
+	}
+}

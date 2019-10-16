@@ -1,0 +1,93 @@
+.relative{position: relative;}
+.static{position: static;}
+.absolute{position: absolute;}
+
+.clearfix{
+	&:before, &:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+p{
+	margin:0;
+}
+.bg{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.f-row{
+	display: flex;
+	flex-direction: row;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.f-col{
+	display: flex;
+	flex-direction: column;
+}
+@mixin set-line($line, $lineHeight){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    line-height: $lineHeight;
+    height: calc(#{$lineHeight} * #{$line});
+}
+@mixin set-lineMax($line, $lineHeight){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    line-height: $lineHeight;
+    max-height: calc(#{$lineHeight} * #{$line});
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/webfonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/webfonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+// 
+@font-face {
+	font-family: 'caros';
+	src: url('../fonts/webfonts/Caros.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'caros';
+	src: url('../fonts/webfonts/CarosMedium.ttf') format('truetype');
+	font-weight:500;
+}
+@font-face {
+	font-family: 'caros';
+	src: url('../fonts/webfonts/CarosBold.ttf') format('truetype');
+	font-weight:700;
+}
+@font-face {
+	font-family: 'caros';
+	src: url('../fonts/webfonts/CarosExtraBold.ttf') format('truetype');
+	font-weight:800;
+}

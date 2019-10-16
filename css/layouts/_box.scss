@@ -1,0 +1,260 @@
+#box{
+	width: 40%;
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    background: white;
+    transform: translateX(-50%);
+    top: 7%;
+    padding: 110px 0 45px 0;
+    border:2px solid $c18;
+    border-radius:20px;
+    box-shadow:0px 0px 65px #bed7ef;
+	.body{
+			.title{
+				color: $c17;
+				font-weight: 500;
+				font-size: 26px;
+				margin-bottom: 50px;
+			}
+			.c-down{
+				margin-bottom: 100px;
+				.count{
+					li{
+						display: inline-block;
+						margin:0 27px;
+						font-size:20px;
+						color: $c3;
+						font-weight:500;
+						span{
+							display: flex;
+							align-items:center;
+							justify-content: center;
+							width: 105px;
+							height: 105px;
+							border:2px solid $c18;
+							border-radius:50%;
+							color: $c17;
+							font-weight:500;
+							font-size:40px;
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+			.card{
+				border:0;
+				.card-body{
+					padding:0;
+					.range-field{
+						position: relative;
+						width: 60%;
+						margin:0 auto;
+						.range{
+							width: 100%;
+							height:16px;
+						}
+						.label{
+							color: $c19;						
+							font-weight: 500;
+							span{
+								font-size: 20px;
+								color: $c4;
+								font-weight: 500;
+							}
+							&.label1{
+								position:absolute;
+								left: 10%;
+							}
+							&.label2{
+								position:absolute;
+								left: 45%;
+							}
+							&.label3{
+								position: absolute;
+	    						right: 10%;
+							}
+							&:before{
+								content:"";
+								display: block;
+								position:absolute;
+								top: -38px;
+								left: 50%;
+								transform: translateX(-50%);
+								width:2px;
+								height:25px;
+								background:$c4;
+							}
+						}
+						.buy{
+							color: white;
+							background:$c4;
+							text-transform: uppercase;
+							padding:22px 130px;
+							border-radius:50px;
+							border:none;
+							outline: none;
+							font-size:18px;
+							margin-top: 100px;
+							margin-bottom: 45px;
+						}
+					}
+					.s-value{
+						justify-content:center;
+						align-items:center;
+						.item{
+							margin:0 70px;
+							h2{
+								color: $c4;
+								font-size: 60px;
+								font-weight: 500;
+							}
+							p{
+								color: $c20;
+								font-size: 26px;
+								font-weight: 500;
+							}
+						}
+					}
+				}
+			}
+	}
+}
+@media (max-width: 1366px) {
+	#box{
+		width:60%;
+		top: 5.5%;
+		padding-top:30px;
+	}
+}
+@media (max-width: 1024px) {
+	#box{
+		width:70%;
+		top: 4%;
+		.body{
+			.card{
+				.card-body{
+					.range-field{
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#box{
+		position:relative;
+		width:95%;
+		margin-top: 50px;
+	}
+}
+@media (max-width: 414px) {
+	#box{
+		
+		.body{
+			.title{
+				font-size: 18px;
+			}
+			.c-down{
+				margin-bottom:30px;
+				.count{
+					li{
+						margin-bottom: 30px;
+						span{
+							font-size: 25px;
+						}
+					}
+				}
+			}
+			.card{
+				.card-body{
+					.range-field{
+						.buy{
+							padding:5px 30px;
+							margin-bottom: 10px;
+							font-size: 16px;
+						}
+						.label{
+							&.label2{
+								left: 40%;
+							}
+						}
+					}
+					.s-value{
+						.item{
+							h2{
+								font-size: 20px;
+							}
+							p{
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 375px) {
+	#box{
+		.body{
+			.c-down{
+				.count{
+					overflow: hidden;
+					li{
+						display: block;
+						margin:0;
+						width:25%;
+						float:left;
+						span{
+							border:0;
+							margin:0;
+							width:auto;
+							height:auto;
+						}
+					}
+				}
+			}
+			.card{
+				.card-body{
+					.range-field{
+						.label{
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+	#box{
+		width: 100%;
+		border:0;
+		.body{
+			.title{
+				font-size: 16px;
+			}
+			.card{
+				.card-body{
+					.range-field{
+						.label{
+							font-size: 14px;
+						}
+					}
+					.s-value{
+						.item{
+							h2{
+								font-size: 25px;
+							}
+							p{
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

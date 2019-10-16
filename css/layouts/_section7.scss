@@ -1,0 +1,63 @@
+#section7{
+	padding:50px 0 60px 0;
+	background: $c11;
+	.body{
+		.top{
+			margin-bottom: 55px;
+			.title{
+				margin-bottom: 10px;
+			}
+			.desc{
+				font-weight: 500;
+				padding:0 315px;
+				span{
+					color: $c10;
+				}
+			}
+		}
+		.bottom{
+			.item{
+				margin-bottom: 50px;
+				.image{
+
+					margin-bottom: 20px;
+					text-align: center;
+					img{
+						display: inline-block;
+						
+					}
+				}
+				.desc{
+					text-align: center;
+					padding:0 15px;
+					font-weight: 500;
+					span{
+						color: $c10;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1024px) {
+	#section7{
+		.body{
+			.top{
+				.desc{
+					padding:0 200px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#section7{
+		.body{
+			.top{
+				.desc{
+					padding:0;
+				}
+			}
+		}
+	}
+}

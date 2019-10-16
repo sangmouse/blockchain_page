@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	padding:0;
+	font-size: 16px;
+	font-weight:400;
+	font-family:$f1;
+}
+.wrap{
+	overflow: hidden;
+	position:relative;
+}
+h2{
+	margin:0;
+}
+.bold{
+	font-weight:bold;
+}
+.b{
+	color: #000000;
+}
+
+.w{
+	color: #ffffff;
+}
+.center{
+	text-align: center;
+}
+
+.form-control:focus{
+	outline: none;
+	box-shadow:none;
+}
+textarea:focus{
+	outline: none;
+	box-shadow:none;
+}
+.form-control,textarea{
+	padding-left:20px;
+}
+textarea{
+	padding-top:10px;
+}
+.form-control::placeholder,textarea::placeholder{
+	font-size:14px;
+	color: $c12;
+}
+.s-title{
+	font-size: 30px;
+	font-weight:bold;
+}
+@media (max-width: 375px) {
+	.s-title{
+		font-size: 25px;
+	}
+}
+@media (max-width: 320px) {
+	.s-title{
+		font-size: 23px;
+	}
+}
+.s-desc{
+	text-align: center;
+}
+
+@media (min-width: 1200px) {
+	.container{
+		width:1170px;
+		max-width:100%;
+	}
+}

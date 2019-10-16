@@ -1,0 +1,20 @@
+#section9{
+	.body{
+		padding-bottom: 50px;
+		.title{
+
+		}
+		.desc{
+			font-weight: 500;
+			margin-bottom: 45px;
+		}
+		.brand{
+			.image{
+
+				margin:0 10px 30px 10px;
+				box-shadow: 0px 0px 65px $c30;
+				display: inline-block;
+			}
+		}
+	}
+}

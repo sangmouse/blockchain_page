@@ -1,0 +1,26 @@
+#section17{
+	line-height: 1;
+	.mar{
+		.coin{
+			display: inline-block;
+			margin:0 10px;
+			font-size: 13px;
+			letter-spacing: 1px;
+			color: $c27;
+			&:hover{
+				text-decoration: underline;
+			}
+			.icon{
+				color: $c25;
+				display: inline-block;
+				margin-right:5px;
+			}
+			.n{
+				color: $c28;
+			}
+			.uni{
+				color: $c27;
+			}
+		}
+	}
+}

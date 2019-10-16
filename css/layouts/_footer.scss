@@ -1,0 +1,135 @@
+.footer{
+	background: $c9;
+	.body{
+		padding:25px 0;
+		p{
+			font-size: 18px;
+			color: white;
+		}
+	}
+}
+.chat{
+	position: absolute;
+	right:50px;
+	bottom:130px;
+	z-index: 4;
+	width:350px;
+	.frame{
+		box-shadow:0px 0px 65px #bed7ef;
+		border-bottom-left-radius:8px;
+		border-bottom-right-radius:8px;
+		margin-bottom: 25px;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .4s ease-in-out;
+		transform:translateY(100%);
+		.intro{
+			color: $c15;
+			background:$c21;
+			border-top-left-radius:8px;
+			border-top-right-radius:8px;
+			padding:10px;
+		}
+		.ch{
+			padding:30px;
+			background:white;
+			p{
+				&:nth-child(1){
+					font-weight: 700;
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
+				&:last-child{
+					font-weight: 500;
+					color: $c39;
+					font-size: 15px;
+				}
+			}
+			.fil{
+				overflow: hidden;
+				margin-bottom: 20px;
+				.image{
+					float: left;
+					span{
+						display: inline-block;
+						margin-right: -15px;
+					}
+				}
+				.icon{
+					float: right;
+					margin-top: 10px;
+				}
+			}
+			.ans{
+				color: $c21;
+				font-weight: 500;
+				margin-bottom: 10px;
+			}
+			.chat-form{
+				position:relative;
+				margin-bottom: 10px;
+				input{
+					height: 40px;
+					width: 100%;
+					border:1px solid $c21;
+					border-radius:5px;
+					padding-left:10px;
+					&::placeholder{
+						color: $c40;
+					}
+					&:focus{
+						outline: 0;
+						box-shadow:0;
+					}
+				}
+				.img{
+					position:absolute;
+					top:50%;
+					transform: translateY(-50%);
+					right:10px;
+				}
+			}
+		}
+		&.active{
+			transform:translateY(0);
+			opacity: 1;
+			visibility:visible;
+		}
+	}
+	.icon{
+		display: inline-block;
+		float:right;
+		&:before{
+			content:"";
+			clear: both;
+		}
+		&:after{
+			content:"";
+			clear: both;
+		}
+	}
+}
+@media (max-width: 414px) {
+	.footer{
+		.body{
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media (max-width: 375px) {
+	.chat{
+		right:10px;
+	}
+}
+@media (max-width: 320px) {
+	.chat{
+		width:300px;
+		.frame{
+			.ch{
+				padding:10px;
+			}
+		}
+	}
+}

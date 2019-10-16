@@ -1,0 +1,19 @@
+@media (max-width: 1024px){
+	.header .navigation .menu .list li img {
+		width: 50px;
+	}
+	#sidebar .cl-bar{
+		font-size: 20px;
+	}
+}
+@media (max-width: 414px){
+	.header {
+		height: 100vh;
+	}
+}
+#section17{
+	padding-bottom: 20px;
+}
+#box{    
+margin-top: 80px;
+}

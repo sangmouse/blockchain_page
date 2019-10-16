@@ -1,0 +1,158 @@
+#section13{
+	.body{
+		margin-bottom: 100px;
+		.title{
+			margin-bottom: 80px;
+		}
+		.new{			
+			.owl-carousel{
+				.item{
+					position: relative;
+					overflow: hidden;
+					.olay{
+						position: absolute;
+					    bottom: -100%;
+					    opacity: 0;
+					    visibility: hidden;
+					    left: 8px;
+					    padding: 30px 20px;
+					    border-bottom:5px solid $c21;
+					    transition: all .4s ease-in-out;
+
+					    width: 91%;
+						background:$c38;
+						.text{
+							font-weight: bold;
+							font-size: 16px;
+							color: $c15;
+						}
+					}
+					&:hover{
+						.olay{
+							opacity: 1;
+							visibility:visible;
+							bottom:24px;
+						}
+					}
+				}
+				.owl-nav{
+					display: none;
+				}
+				.owl-dots{
+					margin-top: 50px;
+					display: block;
+					text-align: center;
+					.owl-dot{
+						display: inline-block;
+						margin:0 5px;
+						span{
+							display: block;
+							width:10px;
+							height: 10px;
+							background: $c37;
+							border-radius: 50%;
+							cursor: pointer;
+						}
+						&.active{
+							span{
+								background: $c10;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1024px) {
+	#section13{
+		.body{
+			.title{
+				margin-bottom: 50px;
+			}
+			.new{
+				.owl-carousel{
+					.item{
+						&:hover{
+							.olay{
+								bottom:19px;
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#section13{
+		.body{
+			.new{
+				.owl-carousel{
+					.item{
+						.olay{
+							left:4px;
+							padding:5px 0;
+							.text{
+								font-size: 13px;
+							}
+						}
+						&:hover{
+							.olay{
+								bottom:14px;
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 414px) {
+	#section13{
+		.body{
+			.new{
+				.owl-carousel{
+					.item{
+						.olay{
+							left:8px;
+							padding:20px 5px;
+							.text{
+								font-size: 13px;
+							}
+						}
+						&:hover{
+							.olay{
+								bottom:22px;
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 320px) {
+	#section13{
+		.body{
+			.new{
+				.owl-carousel{
+					.item{
+						.olay{
+							left:5px;
+							padding:20px 5px;
+							.text{
+								font-size: 13px;
+							}
+						}
+						&:hover{
+							.olay{
+								bottom:17px;
+							}
+						}						
+					}
+				}
+			}
+		}
+	}
+}

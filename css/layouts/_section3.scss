@@ -1,0 +1,36 @@
+#section3{
+	.body{
+		.title{
+			margin-bottom: 10px;
+		}
+		.desc{
+			margin-bottom: 80px;
+			padding:0 300px;
+			font-weight: 500;
+			span{
+				color: $c10;
+			}
+		}
+		img{
+			display: inline-block;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	#section3{
+		.body{
+			.desc{
+				padding:0 150px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	#section3{
+		.body{
+			.desc{
+				padding:0;
+			}
+		}
+	}
+}
