@@ -158,20 +158,25 @@
 }
 @media (max-width: 1366px) {
 	#box{
-		width:60%;
-		top: 5.5%;
-		padding-top:30px;
+		position:relative;
+		margin-top: 30px;
+		width:85%;
 	}
 }
 @media (max-width: 1024px) {
 	#box{
-		width:70%;
-		top: 4%;
+		width:95%;
 		.body{
-			.card{
-				.card-body{
-					.range-field{
-						width: 90%;
+			.left{
+				.c-down{
+					.count{
+						li{
+							margin:0 10px;
+							span{
+								width:85px;
+								height:85px;
+							}
+						}
 					}
 				}
 			}
@@ -180,44 +185,42 @@
 }
 @media (max-width: 768px) {
 	#box{
-		position:relative;
-		width:95%;
-		margin-top: 50px;
-	}
-}
-@media (max-width: 414px) {
-	#box{
-		
 		.body{
-			.title{
-				font-size: 18px;
-			}
-			.c-down{
-				margin-bottom:30px;
-				.count{
-					li{
-						margin-bottom: 30px;
-						span{
-							font-size: 25px;
+			flex-direction:column;
+			.left{
+				.card{
+					.card-body{
+						.range-field{
+							.buy{
+								margin-bottom: 0;
+							}
 						}
 					}
 				}
 			}
-			.card{
-				.card-body{
-					.range-field{
-						.buy{
-							padding:5px 30px;
-							margin-bottom: 10px;
-							font-size: 16px;
-						}
-						.label{
-							&.label2{
-								left: 40%;
+			.right{
+				margin-left: 0;
+				.item{
+					justify-content: space-around;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 414px) {
+	#box{
+		width:95%;
+		.body{
+			flex-direction:column;
+			.left{
+				.card{
+					.card-body{
+						.range-field{
+							.buy{
+								padding:10px 20px;
 							}
 						}
 					}
-					
 				}
 			}
 		}
@@ -226,51 +229,16 @@
 @media (max-width: 375px) {
 	#box{
 		.body{
-			.c-down{
-				.count{
-					overflow: hidden;
-					li{
-						display: block;
-						margin:0;
-						width:25%;
-						float:left;
-						span{
-							border:0;
-							margin:0;
-							width:auto;
-							height:auto;
+			.right{
+				.item{
+					.r{
+						.title{
+							font-size: 25px;
+						}
+						.pri{
+							font-size: 16px;
 						}
 					}
-				}
-			}
-			.card{
-				.card-body{
-					.range-field{
-						.label{
-							font-size: 12px;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-@media (max-width: 320px) {
-	#box{
-		width: 100%;
-		border:0;
-		.body{
-			.title{
-				font-size: 16px;
-			}
-			.card{
-				.card-body{
-					.range-field{
-						.label{
-							font-size: 14px;
-						}
-					}
-					
 				}
 			}
 		}
